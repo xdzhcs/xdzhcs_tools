@@ -21,5 +21,13 @@ def underline_to_camel( underline_format):
             camel_format += _s_.capitalize()
     return camel_format
 
+def underline_to_sm_camel(underline_format):
+    res = underline_to_camel(underline_format)
+    if len(res) > 0 :
+        return res[0].lower()+res[1:]
 
-print(underline_to_camel('base_user_model'))
+
+
+
+
+#print(underline_to_camel('base_user_model'))
